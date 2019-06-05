@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+  <CheckBox
+      android:id="@+id/checkBox"
+      style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="45dp"
+      android:layout_weight="0.2"
+      android:checked="true"
+      android:clickable="true" />
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+  <TextView
+      android:id="@+id/task_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="4"
+      android:text="task title" />
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+  <EditText
+      android:id="@+id/editText2"
+      android:layout_width="5dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:ems="10"
+      android:hint="number of hours"
+      android:inputType="number|numberDecimal|time"
+      android:singleLine="true"
+      android:text="3.0"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="5dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:text="h" />
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+  <ImageButton
+      android:id="@+id/imageButton"
+      android:layout_width="15dp"
+      android:layout_height="match_parent"
+      android:layout_weight="0.5"
+      android:background="@color/classic"
+      android:scaleType="centerInside"
+      app:srcCompat="@android:drawable/ic_menu_edit" />
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+</LinearLayout>
+

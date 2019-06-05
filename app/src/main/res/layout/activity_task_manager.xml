@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskManager">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Base.V7.Widget.AppCompat.Toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:scaleType="center"
+                app:srcCompat="@drawable/profile" />
+
+            <ImageButton
+                android:id="@+id/help_button"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:elevation="@dimen/activity_horizontal_margin"
+                android:scaleType="center"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_task_manager" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

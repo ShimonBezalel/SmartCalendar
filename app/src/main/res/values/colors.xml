@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#3527f9</color>
+    <color name="smartBlue">#3527f9</color>
+    <color name="green_default">#6AF2B7</color>
+    <color name="red_manager">#D11F66</color>
+</resources>
